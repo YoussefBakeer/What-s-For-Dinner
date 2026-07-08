@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/images.png">
+    <title>What's For Dinner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,300;0,600;0,700;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=SN+Pro:wght@800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/main.css">
+</head>
+<!-- <img src="Images/beef-burger-recipe-2.jpg" alt=""> -->
+<body>
+    
+     <nav class="navbar navbar-expand-lg nav-main ">
+        <div class="container ">
+            <div class="navbar-heading d-flex align-items-center gap-3">
+            <div class="navbar-icon d-flex">
+                <i class="fa-solid fa-utensils"></i>
+            </div>
+            <div class="navbar-heading-text">
+                <h2>What's For Dinner</h2>
+                <p>Your daily meal inspiration</p>
+            </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  d-flex gap-3 ms-auto mb-2 mb-lg-0">
+                <li class="nav-item nav-item-icon">
+                <i class="fa-solid fa-bookmark"></i>
+                </li>
+                <li class="nav-item nav-item-icon">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                </li>
+                <li class="nav-item nav-item-icon">
+                <i class="fa-solid fa-gear"></i>
+                </li>
+                <li class="nav-image">
+                  <img src="Images/avatar-2.jpg" class="w-100" alt="user">
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+
+
+        <div class="hero-section container-fluid ">
+
+
+            <div class="card hero-section-main    mx-auto" >
+                <div class="row g-0">
+                    <!-- Image -->
+                    <div class="col-md-5 position-relative">
+                    <img src="Images/greek_salad_600x900.webp" id="productImage" class="img-fluid rounded-start" alt="salad">
+                    <div class="image-review position-absolute d-flex gap-2">
+                        <div class="image-review-icon">
+                            <span> <i class="fa-solid fa-star"></i> </span>
+                        </div>
+                        <div class="image-review-number d-flex gap-2 align-items-center">
+                            <span id="productreview" class="image-review-number-main"> 4.9 </span>
+                            <span  id="reviewCount" class="image-review-number-second">(187 reviews)</span>
+                        </div>
+                    </div>
+                    <div class="image-information position-absolute d-flex  ">
+                        <div class="image-information-prep-time d-flex flex-column align-items-center  gap-1">
+                                <i class="fa-solid fa-clock"></i>
+                                <span class="image-information-text">Prep Time</span>
+                                <span id="prepProduct" class="image-information-time">10 min</span>
+                        </div>
+                        <div class="image-information-cook-time d-flex flex-column align-items-center gap-1">
+                                <i class="fa-solid fa-fire-burner"></i>
+                                <span class="image-information-text">Cook Time</span>
+                                <span id="cookProduct" class="image-information-time"> 0 min</span>
+                        </div>
+                        <div class="image-information-servings d-flex flex-column align-items-center gap-1">
+                                <i class="fa-solid fa-users"></i>
+                                <span class="image-information-text">Servings</span>
+                                <span  id="servingsProduct" class="image-information-time">2 people</span>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Content -->
+                    <div class="col-md-7">
+                    <div class="card-body card-body-content  mx-auto">
+                        <div class="card-body-status d-flex align-items-center gap-2">
+                            <span id="producttag1" class="card-body-state">Easy</span>
+                            <span id="producttag2" class="card-body-name">Mediterranean</span>
+                        </div>
+                        <div class="card-body-heading d-flex justify-content-between align-content-center">
+                         <div class="card-body-heading-text">
+                            <h1 id="productName" class="card-title">Caesar Salad</h1>
+                           <p  id="productdescription" class="card-text">Classic salad with crispy romaine and creamy dressing</p>
+
+                         </div> 
+                           <div class="card-body-heading-icon d-flex gap-3">
+                            <div class="card-body-heading-icon-save d-flex">
+                                <i class="fa-solid fa-bookmark m-auto"></i>
+                            </div>
+                            <div class="card-body-heading-icon-share d-flex">
+                                <i class="fa-solid fa-share-nodes m-auto"></i>
+                            </div>
+                            
+                           </div>
+                         </div>
+
+                         <nav>
+                                    <div class="nav nav-tabs card-content-main d-flex gap-4" id="nav-tab" role="tablist">
+                                        <button class="nav-link nav-mneu-main active" id="nav-ingredients-tab" data-bs-toggle="tab" data-bs-target="#nav-ingredients" type="button" role="tab" aria-controls="nav-ingredients" aria-selected="true"><i class="fa-solid fa-list-check"></i> Ingredients </button>
+                                        <button class="nav-link nav-mneu-main" id="nav-instructions-tab" data-bs-toggle="tab" data-bs-target="#nav-instructions" type="button" role="tab" aria-controls="nav-instructions" aria-selected="false"><i class="fa-solid fa-book-open"></i> Instructions </button>
+                                        <button class="nav-link nav-mneu-main" id="nav-nutrition-tab" data-bs-toggle="tab" data-bs-target="#nav-nutrition" type="button" role="tab" aria-controls="nav-nutrition" aria-selected="false"><i class="fa-solid fa-chart-pie"></i> Nutrition</button>
+                                        <button class="nav-link nav-mneu-main" id="nav-chef-tab" data-bs-toggle="tab" data-bs-target="#nav-chef" type="button" role="tab" aria-controls="nav-chef" aria-selected="false"><i class="fa-solid fa-lightbulb"></i> Chef's Tip</button>
+                                        
+                                    </div>
+                                    </nav>
+                                                <div class="tab-content " id="nav-tabContent">
+                                                <div class="tab-pane fade show active " id="nav-ingredients" role="tabpanel" aria-labelledby="nav-ingredients-tab" tabindex="0">
+                                                    <div class="ingredients-main d-flex flex-column gap-3">
+                                                        <div class="ingredients-main-steps d-flex gap-3 align-items-center">
+                                                            <div class="ingredients-main-steps-number d-flex">
+                                                                <span class="number m-auto"> 1 </span>
+                                                            </div>
+                                                            <span  id="ingredientsStep1"  class="Text">1 large romaine lettuce</span>
+                                                        </div>
+                                                        <div class="ingredients-main-steps d-flex gap-3 align-items-center">
+                                                            <div class="ingredients-main-steps-number d-flex">
+                                                                <span class="number m-auto"> 2 </span>
+                                                            </div>
+                                                            <span id="ingredientsStep2" class="Text">1/2 cup Caesar dressing</span>
+                                                        </div>
+                                                        <div class="ingredients-main-steps d-flex gap-3 align-items-center">
+                                                           <div class="ingredients-main-steps-number d-flex">
+                                                                <span class="number m-auto"> 3 </span>
+                                                            </div>   
+                                                            <span id="ingredientsStep3" class="Text">1/2 cup parmesan cheese, shaved</span>
+                                                        </div>
+                                                        <div class="ingredients-main-steps d-flex gap-3 align-items-center">
+                                                            <div class="ingredients-main-steps-number d-flex">
+                                                                <span class="number m-auto"> 4 </span>
+                                                            </div>
+                                                            <span id="ingredientsStep4" class="Text">1 cup croutons</span>
+                                                        </div>
+                                                        <div class="ingredients-main-steps d-flex gap-3 align-items-center">
+                                                            <div class="ingredients-main-steps-number d-flex">
+                                                                <span class="number m-auto"> 5 </span>
+                                                            </div>
+                                                            <span id="ingredientsStep5" class="Text">2 anchovy fillets (optional)</span>
+                                                        </div>
+                                                        <div class="ingredients-main-steps d-flex gap-3 align-items-center">
+                                                            <div class="ingredients-main-steps-number d-flex">
+                                                                <span class="number m-auto"> 6 </span>
+                                                            </div>
+                                                            <span id="ingredientsStep6" class="Text">Lemon wedges</span>
+                                                        </div>
+                                                        <div class="ingredients-main-steps d-flex gap-3 align-items-center">
+                                                           <div class="ingredients-main-steps-number d-flex">
+                                                                <span class="number m-auto"> 7 </span>
+                                                            </div>
+                                                            <span id="ingredientsStep7" class="Text">Black pepper</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-instructions" role="tabpanel" aria-labelledby="nav-instructions-tab" tabindex="0">
+                                                       <div class="instructions-main d-flex flex-column gap-3">
+                                                        <div class="instructions-main-steps d-flex gap-3 align-items-center">
+                                                            <div class="instructions-main-steps-number d-flex">
+                                                                <span class="number m-auto"> 1 </span>
+                                                            </div>
+                                                            <span id="instructionsStep1" class="Text">Wash and dry romaine lettuce thoroughly. Tear into bite-sized pieces.</span>
+                                                        </div>
+                                                        <div class="instructions-main-steps d-flex gap-3 align-items-center">
+                                                            <div class="instructions-main-steps-number d-flex">
+                                                                <span class="number m-auto"> 2 </span>
+                                                            </div>
+                                                            <span id="instructionsStep2" class="Text">Place lettuce in a large salad bowl.</span>
+                                                        </div>
+                                                        <div class="instructions-main-steps d-flex gap-3 align-items-center">
+                                                           <div class="instructions-main-steps-number d-flex">
+                                                                <span class="number m-auto"> 3 </span>
+                                                            </div>   
+                                                            <span id="instructionsStep3" class="Text">Add Caesar dressing and toss until evenly coated.</span>
+                                                        </div>
+                                                        <div class="instructions-main-steps d-flex gap-3 align-items-center">
+                                                            <div class="instructions-main-steps-number d-flex">
+                                                                <span class="number m-auto"> 4 </span>
+                                                            </div>
+                                                            <span id="instructionsStep4" class="Text">Add croutons and half the parmesan cheese. Toss gently.</span>
+                                                        </div>
+                                                        <div class="instructions-main-steps d-flex gap-3 align-items-center">
+                                                            <div class="instructions-main-steps-number d-flex">
+                                                                <span class="number m-auto"> 5 </span>
+                                                            </div>
+                                                            <span id="instructionsStep5" class="Text">Top with remaining parmesan shavings and anchovies if using.</span>
+                                                        </div>
+                                                        <div class="instructions-main-steps d-flex gap-3 align-items-center">
+                                                            <div class="instructions-main-steps-number d-flex">
+                                                                <span class="number m-auto"> 6 </span>
+                                                            </div>
+                                                            <span id="instructionsStep6" class="Text">Serve immediately with lemon wedges and fresh black pepper.</span>
+                                                        </div>
+                                                       
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-nutrition" role="tabpanel" aria-labelledby="nav-nutrition-tab" tabindex="0">
+                                                    <div class="nutrition-main d-flex flex-column gap-5">
+                                                        
+                                                            <div class="row g-5">
+                                                            <div class="col-6 d-flex gap-2 align-items-center justify-content-between">
+                                                                <div class="nutrition-main-content d-flex gap-3 align-items-center ">
+                                                                    <div class="nutrition-main-icon-calories d-flex">
+                                                                        <i class="fa-solid fa-fire m-auto"></i>
+                                                                    </div>
+                                                                    <div  class="nutrition-main-text">
+                                                                        <span>Calories</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="nutrition-main-item">
+                                                                    <span id="nutrition-Calories">320 kcal</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 d-flex gap-2 align-items-center justify-content-between">
+                                                                <div class="nutrition-main-content d-flex gap-3 align-items-center ">
+                                                                    <div class="nutrition-main-icon-protein d-flex">
+                                                                        <i class="fa-solid fa-dumbbell m-auto "></i>
+                                                                    </div>
+                                                                    <div class="nutrition-main-text">
+                                                                        <span >Protein</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="nutrition-main-item">
+                                                                    <span id="nutrition-Protein">12g</span>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="row g-5">
+                                                            <div class="col-6 d-flex gap-2 align-items-center justify-content-between">
+                                                                <div class="nutrition-main-content d-flex gap-2 align-items-center ">
+                                                                    <div class="nutrition-main-icon-carbohydrates d-flex">
+                                                                        <i class="fa-solid fa-wheat-awn m-auto"></i>
+                                                                    </div>
+                                                                    <div class="nutrition-main-text">
+                                                                        <span>Carbohydrates</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="nutrition-main-item">
+                                                                    <span id="nutrition-Carbohydrates">18g</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 d-flex gap-2 align-items-center justify-content-between">
+                                                                <div class="nutrition-main-content d-flex gap-2 align-items-center ">
+                                                                    <div class="nutrition-main-icon-fat d-flex">
+                                                                        <i class="fa-solid fa-droplet m-auto"></i>
+                                                                    </div>
+                                                                    <div class="nutrition-main-text">
+                                                                        <span>Fat</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="nutrition-main-item">
+                                                                    <span id="nutrition-Fat">22g</span>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="row g-5">
+                                                            <div class="col-6 d-flex gap-2 align-items-center justify-content-between">
+                                                                <div class="nutrition-main-content d-flex gap-2 align-items-center ">
+                                                                    <div class="nutrition-main-icon-fiber d-flex ">
+                                                                        <i class="fa-solid fa-seedling m-auto"></i>
+                                                                    </div>
+                                                                    <div class="nutrition-main-text">
+                                                                        <span>Fiber</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="nutrition-main-item">
+                                                                    <span id="nutrition-Fiber">3g</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 d-flex gap-2 align-items-center justify-content-between">
+                                                                <div class="nutrition-main-content d-flex gap-2 align-items-center ">
+                                                                    <div class="nutrition-main-icon-sodium d-flex">
+                                                                        <i class="fa-solid fa-cube m-auto"></i>
+                                                                    </div>
+                                                                    <div class="nutrition-main-text">
+                                                                        <span>Sodium</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="nutrition-main-item">
+                                                                    <span id="nutrition-Sodium">680mg</span>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-chef" role="tabpanel" aria-labelledby="nav-chef-tab" tabindex="0">
+                                                    <div class="chef-main d-flex flex-column gap-3">
+                                                        <div class="chef-main-content d-flex  gap-3 align-items-center">
+                                                            <div class="chef-main-content-icon d-flex">
+                                                                <i class="fa-solid fa-check m-auto"></i>
+                                                            </div>
+                                                            <div class="chef-main-content-text">
+                                                                <span id="chefTip1">Use cold, crisp lettuce for best texture</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="chef-main-content d-flex  gap-3 align-items-center">
+                                                            <div class="chef-main-content-icon d-flex">
+                                                                <i class="fa-solid fa-check m-auto"></i>
+                                                            </div>
+                                                            <div class="chef-main-content-text">
+                                                                <span id="chefTip2">Make homemade croutons for better flavor</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="chef-main-content d-flex  gap-3 align-items-center">
+                                                            <div class="chef-main-content-icon d-flex">
+                                                                <i class="fa-solid fa-check m-auto"></i>
+                                                            </div>
+                                                            <div class="chef-main-content-text">
+                                                                <span id="chefTip3">Add grilled chicken for a complete meal</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="chef-main-content d-flex  gap-3 align-items-center">
+                                                            <div class="chef-main-content-icon d-flex">
+                                                                <i class="fa-solid fa-check m-auto"></i>
+                                                            </div>
+                                                            <div class="chef-main-content-text">
+                                                                <span id="chefTip4">Don't dress salad until ready to serve</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+
+
+                                                <div class="bottom container">
+                                                <hr>
+                                                <button onclick="changeProduct()" class="btn button-main d-flex gap-2 align-items-center"> <i class="fa-solid fa-rotate"></i>  Try Another Recipe </button>
+                                                </div>
+                                            </div>
+                </div>
+                               </div>
+
+                </div>
+        </div>
+
+
+
+
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>

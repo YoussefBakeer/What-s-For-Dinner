@@ -1,0 +1,395 @@
+/*
+  font-family: "Poppins", sans-serif; 
+   font-family: "SN Pro", sans-serif;
+     font-family: "Montserrat", sans-serif;
+     font-family: "IBM Plex Sans Arabic", sans-serif;
+      font-family: "Playfair Display SC", serif;
+      font-family: "Rowdies", sans-serif;
+*/
+.nav-main
+{
+    padding: 18px 0;
+    background-color: white;
+    border-bottom: 1px rgb(255, 237, 212) solid;
+    box-shadow: 0px 4px 4px rgb(230, 224, 213);
+}
+.navbar-icon
+{
+    color: white;
+    font-size: 20px;
+    background: linear-gradient(to right, rgb(255, 92, 0),rgb(253, 62, 44));
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.navbar-icon i
+{
+   margin: auto;
+}
+.navbar-heading-text h2
+{
+    font-size: 22px;
+    margin: 0 0 2px; 
+    font-weight: 700;
+}
+.navbar-heading-text p
+{
+    font-size: 14px;
+    margin: 0;
+    color: rgb(106, 114, 130);
+}
+.nav-image 
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px rgb(255, 184, 106) solid;
+}
+.nav-image img
+{
+    border-radius: 50%;
+}
+.nav-item-icon 
+{
+    margin-top: 10px;
+}
+.nav-item-icon i
+{
+    font-size: 20px;
+    color: rgb(74, 85, 101);
+    cursor: pointer;
+}
+.nav-item-icon i:hover
+{
+    color: rgb(245, 73, 0);
+}
+.hero-section 
+{
+    background-color: rgb(255, 249, 236);
+    padding: 30px 0 60px;
+
+}
+.hero-section-main 
+{
+    width: 80%;
+    border-radius: 20px;
+}
+.image-review 
+{
+    top: 3%;
+    left: 5%;
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+.image-information 
+{
+    bottom: 3%;
+    left: 5%;
+    background-color: white;
+    padding: 18px 50px;
+    border-radius: 25px;
+    gap: 85px;
+}
+.image-review-number-main
+{
+    color: rgb(16, 24, 40);
+    font-weight: 500;
+} 
+.image-review-number-second
+{
+    color: rgb(106, 114, 130);
+    font-size: 14px;
+} 
+.image-review-icon 
+{
+    color: rgb(253, 199, 0);
+}
+.image-information-prep-time,.image-information-cook-time,.image-information-servings
+{
+    margin-top: 10px
+}
+.image-information-servings i  
+{
+    font-size: 22px;
+    color: rgb(43, 127, 255);
+}
+.image-information-cook-time i 
+{
+    font-size: 22px;
+    color: rgb(251, 44, 54);
+}
+.image-information-prep-time i
+{
+    font-size: 22px;
+    color: rgb(255, 105, 0);
+}
+.image-information-text
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(106, 114, 130);
+}
+.image-information-time
+{
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(16, 24, 40);
+    margin-top: -5px;
+}
+.card-body-content 
+{
+    width: 95%;
+    margin-top: 20px;
+}
+.card-body-status span
+{
+    font-size: 12px;
+    font-weight: 500;
+}
+.card-body-state
+{
+    background-color: rgb(219, 252, 231);
+    color: rgb(0, 130, 54);
+    padding: 2px 12px;
+    border-radius: 15px;
+}
+.card-body-name
+{
+    background-color: rgb(219, 234, 254);
+    color: rgb(20, 71, 230);
+    padding: 2px 12px;
+    border-radius: 15px;
+}
+.card-body-heading 
+{
+    margin-top: 20px;
+}
+.card-body-heading h1
+{
+    font-size: 36px;
+    font-weight: 700;
+}
+.card-body-heading-icon-save,.card-body-heading-icon-share
+{
+    width: 45px;
+    height: 45px;
+    background-color: rgb(255, 237, 212);
+    border-radius: 12px;
+    cursor: pointer;
+}
+.card-body-heading-icon-save:hover,.card-body-heading-icon-share:hover
+{
+    background-color: rgb(255, 214, 167);
+}
+.card-body-heading-icon i 
+{
+    color: rgb(245, 73, 0);
+
+}
+.card-content-main 
+{
+    margin-top: 35px;
+    
+}
+.card-content-main 
+{
+    margin-top: 35px;
+    
+}
+.card-content-main .nav-mneu-main:focus
+{
+    border-bottom: 2px rgb(245, 73, 0) solid;   
+    color: rgb(245, 74, 0);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+}
+.card-content-main button
+{
+    color: rgb(106, 114, 130);
+     border-top: none;
+    border-left: none;
+    border-right: none;
+    font-weight: 600;
+}
+.card-content-main button:hover
+{
+    color: rgb(54, 65, 83);
+     border-top: none;
+    border-left: none;
+    border-right: none;
+    
+}
+#nav-tabContent {
+    height: 350px;      /* أو max-height */
+    overflow-y: auto;   /* Scroll رأسي */
+    overflow-x: hidden;
+}
+/* .tab-pane {
+    height: 350px;
+    overflow-y: auto;
+} */
+#nav-tabContent::-webkit-scrollbar {
+    width: 5px;
+}
+
+#nav-tabContent::-webkit-scrollbar-thumb {
+    background: #ffd7c1;
+    border-radius: 10px;
+}
+
+#nav-tabContent::-webkit-scrollbar-track {
+    background: transparent;
+}
+.ingredients-main 
+{
+    margin-top: 20px;
+    background-color: rgb(255, 250, 236);
+    padding: 20px;
+    border-radius: 12px;
+}
+.ingredients-main-steps .Text 
+{
+    color: rgb(54, 65, 83);
+}
+.ingredients-main-steps-number  
+{
+    color: white;
+    font-weight: 500;
+    background-color: rgb(255, 105, 0);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
+}
+.instructions-main 
+{
+    margin-top: 25px;
+}
+.instructions-main-steps-number 
+{
+    color: white;
+    font-weight: 700;
+    background-color: rgb(255, 105, 0);
+    border-radius: 12px;
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+}
+.instructions-main .Text 
+{
+    color: rgb(54, 65, 83);
+}
+.nutrition-main-icon-calories 
+{
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 237, 212);
+    color: rgb(245, 73, 0);
+    font-size: 16px;
+}
+.nutrition-main-text 
+{
+    color: rgb(54, 65, 83);
+    font-weight: 500;
+}
+.nutrition-main-item 
+{
+    font-size: 20px;
+    font-weight: 700;
+}
+.nutrition-main-icon-protein 
+{
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    background-color: rgb(219, 234, 254);
+    color: rgb(21, 93, 252);
+}
+.nutrition-main 
+{
+    margin-top: 40px;
+}
+.nutrition-main-icon-fiber 
+{
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    background-color: rgb(219, 252, 231);
+    color: rgb(0, 166, 62);
+}
+.nutrition-main-icon-carbohydrates 
+{
+     border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    background-color: rgb(254, 249, 194);
+    color: rgb(208, 135, 0);
+}
+.nutrition-main-icon-fat 
+{
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    background-color: rgb(255, 226, 226);
+    color: rgb(231, 0, 11);
+}
+.nutrition-main-icon-sodium 
+{
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    background-color: rgb(252, 231, 243);
+    color: rgb(230, 0, 118);
+}
+.chef-main-content-icon 
+{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    background-color: rgb(225, 113, 0);
+    color: white;
+}
+.chef-main 
+{
+    margin-top: 25px;
+}
+.chef-main-content 
+{
+    background-color: rgb(255, 251, 235);
+    border-left: 4px rgb(255, 185, 0) solid;
+    padding: 20px;
+    border-radius: 12px;
+}
+.chef-main-content-text 
+{
+    color: rgb(54, 65, 83);
+}
+hr 
+{
+  margin-top: 70px;   
+}
+.button-main 
+{
+    background: linear-gradient(to right,rgb(255, 104, 0),rgb(251, 45, 54));
+    border: 1px rgb(255, 104, 0) solid ;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+button i
+{
+    font-size: 14px;
+    font-weight: 500;
+}
